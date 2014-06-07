@@ -47,10 +47,10 @@ Passo-a-passo do código: vetor e while para init/acender
 
 - Explicar vetor, while, do/while
 
-- Exemplo 5: PotForBar (30 min)
+- Exemplo 5: Fading (30 min)
 
 Programar e observar mesmo comportamento
-Passo-a-passo do código: for ajuda em estruturas tipo while
+Passo-a-passo do código: for ajuda em estruturas como a que usamos no PotWhileBar
 
 - Explicar for, break, continue
 
