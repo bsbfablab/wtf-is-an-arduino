@@ -1,0 +1,59 @@
+Encontro #3
+===========
+
+=Proposta=
+Entrada/saída analógica
+Estruturas de repetição
+Exemplo: Dimmer LED
+
+=Planejamento=
+
+- Atualizar arquivos do curso (10 min)
+
+- Montar o circuito (20 min)
+
+LED: 3,5,6,9,10,11
+Buttons: A1,A2
+Pot: A0
+
+- Exemplo 1: AnalogInput (30 min)
+
+Programar e observar comportamento
+Passo-a-passo do código: analogRead, 
+Modificação para olhar valores 0-1023 na serial
+
+- Explicar: potenciômetro, divisor de tensão
+- ADC: referência, resolução, canais, o que dá pra fazer
+
+- Exemplo 2: AnalogInOutSerial (30 min)
+
+Programar e observar comportamento
+Passo-a-passo do código: analogWrite, mapping
+Abrir Serial Monitor para ver mapping ADC->PWM
+
+- PWM: largura de pulso, frequência, como se relaciona com timer/counter, o que dá pra fazer
+
+<BREAK>
+
+- Exemplo 3: PotBar (30 min)
+
+Programar e observar comportamento
+Passo-a-passo do código: mapping serve pra outras coisas
+
+- Exemplo 4: PotWhileBar (30 min)
+
+Programar e observar comportamento
+Passo-a-passo do código: vetor e while para init/acender
+
+- Explicar vetor, while, do/while
+
+- Exemplo 5: PotForBar (30 min)
+
+Programar e observar mesmo comportamento
+Passo-a-passo do código: for ajuda em estruturas tipo while
+
+- Explicar for, break, continue
+
+- Desafios para casa!
+
+Incentivar o uso de estruturas lógicas e entradas/saídas diferentes
