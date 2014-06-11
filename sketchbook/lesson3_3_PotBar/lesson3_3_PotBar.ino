@@ -1,50 +1,103 @@
-/*
-  Analog Input
- Demonstrates analog input by reading an analog sensor on analog pin 0 and
- turning on and off a light emitting diode(LED)  connected to digital pin 13. 
- The amount of time the LED will be on and off depends on
- the value obtained by analogRead(). 
- 
- The circuit:
- * Potentiometer attached to analog input 0
- * center pin of the potentiometer to the analog pin
- * one side pin (either one) to ground
- * the other side pin to +5V
- * LED anode (long leg) attached to digital output 13
- * LED cathode (short leg) attached to ground
- 
- * Note: because most Arduinos have a built-in LED attached 
- to pin 13 on the board, the LED is optional.
- 
- 
- Created by David Cuartielles
- modified 30 Aug 2011
- By Tom Igoe
- 
- This example code is in the public domain.
- 
- http://arduino.cc/en/Tutorial/AnalogInput
- 
- */
+int led0 = 11;
+int led1 = 10;
+int led2 = 9;
+int led3 = 6;
+int led4 = 5;
+int led5 = 3;
+int pot = A0;
 
-int sensorPin = A0;    // select the input pin for the potentiometer
-int ledPin = 13;      // select the pin for the LED
-int sensorValue = 0;  // variable to store the value coming from the sensor
-
-void setup() {
-  // declare the ledPin as an OUTPUT:
-  pinMode(ledPin, OUTPUT);  
+void setup()
+{
+  pinMode(led0, OUTPUT);
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+  pinMode(led3, OUTPUT);
+  pinMode(led4, OUTPUT);
+  pinMode(led5, OUTPUT);
+  pinMode(pot, INPUT); // not needed, but good to be sure
 }
 
-void loop() {
-  // read the value from the sensor:
-  sensorValue = analogRead(sensorPin);    
-  // turn the ledPin on
-  digitalWrite(ledPin, HIGH);  
-  // stop the program for <sensorValue> milliseconds:
-  delay(sensorValue);          
-  // turn the ledPin off:        
-  digitalWrite(ledPin, LOW);   
-  // stop the program for for <sensorValue> milliseconds:
-  delay(sensorValue);                  
+void loop()
+{
+  int sensorValue = analogRead(sensorPin);
+
+  int numPins = map(sensorValue, 0, 1023, 0, 6);
+ 
+  switch(numPins)
+  {
+    case 0:
+    {
+      digitalWrite(led0, LOW);
+      digitalWrite(led1, LOW);
+      digitalWrite(led2, LOW);
+      digitalWrite(led3, LOW);
+      digitalWrite(led4, LOW);
+      digitalWrite(led5, LOW);
+    }
+    case 1:
+    {
+      digitalWrite(led0, HIGH);
+      digitalWrite(led1, LOW);
+      digitalWrite(led2, LOW);
+      digitalWrite(led3, LOW);
+      digitalWrite(led4, LOW);
+      digitalWrite(led5, LOW);
+    }
+    case 2:
+    {
+      digitalWrite(led0, HIGH);
+      digitalWrite(led1, HIGH);
+      digitalWrite(led2, LOW);
+      digitalWrite(led3, LOW);
+      digitalWrite(led4, LOW);
+      digitalWrite(led5, LOW);
+    }
+    case 3:
+    {
+      digitalWrite(led0, HIGH);
+      digitalWrite(led1, HIGH);
+      digitalWrite(led2, HIGH);
+      digitalWrite(led3, LOW);
+      digitalWrite(led4, LOW);
+      digitalWrite(led5, LOW);
+    }
+    case 4:
+    {
+      digitalWrite(led0, HIGH);
+      digitalWrite(led1, HIGH);
+      digitalWrite(led2, HIGH);
+      digitalWrite(led3, HIGH);
+      digitalWrite(led4, LOW);
+      digitalWrite(led5, LOW);
+    }
+    case 5:
+    {
+      digitalWrite(led0, HIGH);
+      digitalWrite(led1, HIGH);
+      digitalWrite(led2, HIGH);
+      digitalWrite(led3, HIGH);
+      digitalWrite(led4, HIGH);
+      digitalWrite(led5, LOW);
+    }
+    case 6:
+    {
+      digitalWrite(led0, HIGH);
+      digitalWrite(led1, HIGH);
+      digitalWrite(led2, HIGH);
+      digitalWrite(led3, HIGH);
+      digitalWrite(led4, HIGH);
+      digitalWrite(led5, HIGH);
+    }
+    default:
+    {
+      digitalWrite(led0, HIGH);
+      digitalWrite(led1, LOW);
+      digitalWrite(led2, HIGH);
+      digitalWrite(led3, LOW);
+      digitalWrite(led4, HIGH);
+      digitalWrite(led5, LOW);
+    }
+  }
+    
+  delay(2);
 }
