@@ -19,7 +19,7 @@ void setup()
 
 void loop()
 {
-  int sensorValue = analogRead(sensorPin);
+  int sensorValue = analogRead(pot);
 
   int numPins = map(sensorValue, 0, 1023, 0, 6);
  
@@ -33,6 +33,7 @@ void loop()
       digitalWrite(led3, LOW);
       digitalWrite(led4, LOW);
       digitalWrite(led5, LOW);
+      break;
     }
     case 1:
     {
@@ -42,6 +43,7 @@ void loop()
       digitalWrite(led3, LOW);
       digitalWrite(led4, LOW);
       digitalWrite(led5, LOW);
+      break;
     }
     case 2:
     {
@@ -51,6 +53,7 @@ void loop()
       digitalWrite(led3, LOW);
       digitalWrite(led4, LOW);
       digitalWrite(led5, LOW);
+      break;
     }
     case 3:
     {
@@ -60,6 +63,7 @@ void loop()
       digitalWrite(led3, LOW);
       digitalWrite(led4, LOW);
       digitalWrite(led5, LOW);
+      break;
     }
     case 4:
     {
@@ -69,6 +73,7 @@ void loop()
       digitalWrite(led3, HIGH);
       digitalWrite(led4, LOW);
       digitalWrite(led5, LOW);
+      break;
     }
     case 5:
     {
@@ -78,6 +83,7 @@ void loop()
       digitalWrite(led3, HIGH);
       digitalWrite(led4, HIGH);
       digitalWrite(led5, LOW);
+      break;
     }
     case 6:
     {
@@ -96,6 +102,7 @@ void loop()
       digitalWrite(led3, LOW);
       digitalWrite(led4, HIGH);
       digitalWrite(led5, LOW);
+      break;
     }
   }
     
