@@ -19,7 +19,7 @@ Pot: A0
 - Exemplo 1: AnalogInput (30 min)
 
 Programar e observar comportamento
-Passo-a-passo do código: analogRead, 
+Passo-a-passo do código: analogRead
 Modificação para olhar valores 0-1023 na serial
 
 - Explicar: potenciômetro, divisor de tensão
@@ -39,20 +39,19 @@ Abrir Serial Monitor para ver mapping ADC->PWM
 
 Programar e observar comportamento
 Passo-a-passo do código: mapping serve pra outras coisas
+Desafio: descobrir pq não funciona direito
 
-- Exemplo 4: PotWhileBar (30 min)
+- Exemplo 4: PotLoopBar (30 min)
 
 Programar e observar comportamento
-Passo-a-passo do código: vetor e while para init/acender
+Passo-a-passo do código: vetor, while, for
 
-- Explicar vetor, while, do/while
+- Explicar vetor, while, for, do/while, break, continue
 
 - Exemplo 5: Fading (30 min)
 
 Programar e observar mesmo comportamento
-Passo-a-passo do código: for ajuda em estruturas como a que usamos no PotWhileBar
-
-- Explicar for, break, continue
+Passo-a-passo do código: for
 
 - Desafios para casa!
 
