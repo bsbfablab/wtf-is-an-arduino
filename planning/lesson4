@@ -1,10 +1,6 @@
 Encontro #4
 ===========
 
-TO DO: 
-Schematics
-Slides
-
 =Proposta=
 Temporização
 Interrupções
@@ -12,17 +8,17 @@ Exemplo: Semáforo
 
 =Planejamento=
 
-- Atualizar arquivos do curso (10 min)
+- Atualizar arquivos do curso
 
-- Relembrando a aula passada e tirar dúvidas sobre o dever (20 min)
+- Relembrando a aula passada e tirar dúvidas sobre o dever
 
-- Conceito: Semáforo (10 min)
+- Conceito: Semáforo
 
 Sinal de carros e pedestres
 Tempo de trava para deixar o trânsito fluir
 Sinal vermelho pros dois lados para impedir acidentes
 
-- Montar o circuito (20 min)
+- Montar o circuito
 
 LED: 3,4,5,6,7
 Buttons: 2
@@ -31,7 +27,7 @@ Buttons: 2
 
 Programa que acende cada um dos LEDs após apertarmos um botão
 
-- Lógica: Máquina de estados (30 min)
+- Lógica: Máquina de estados
 
                 Carros    Pedestres             Próximo Estado (cond)
                 -------   ---------             ---------------------
@@ -71,11 +67,11 @@ Programa que usa interrupção externa para interrupção (observar interrupçã
 - Temporização: como fazer as coisas mudarem com o tempo sem dar delay
 
 Como funciona a função millis()
-Função state_time_elapsed()
+Função isStateTimeDone()
 
 - Testar temporização: lesson4_5_TestTiming
 
-Programa que reage troca de estado segundo temporização
+Programa que troca de estado segundo temporização
 
 - Blink: adicionando o alerta ao pedestre
 
