@@ -1,13 +1,13 @@
 // Definimos os pinos que vamos usar
 const int buttonPin = 2;
-const int carGreenPin = 3;
-const int carYellowPin = 4;
+const int pedGreenPin = 3;
+const int pedRedPin = 4;
 const int carRedPin = 5;
-const int pedGreenPin = 6;
-const int pedRedPin = 7;
+const int carYellowPin = 6;
+const int carGreenPin = 7;
 
 // Esse vetor ajuda na hora de inicializar e testar os pinos
-const int ledPins[] = {carGreenPin, carYellowPin, carRedPin, pedGreenPin, pedRedPin};
+const int ledPins[] = {pedGreenPin, pedRedPin, carRedPin, carYellowPin, carGreenPin};
 
 // Essa variável guarda o estado atual
 int state = 0;
