@@ -1,4 +1,4 @@
-int led = {11, 10, 9, 6, 5, 3};
+int led[] = {11, 10, 9, 6, 5, 3};
 int pot = A0;
 
 void setup()
@@ -15,7 +15,7 @@ void setup()
 
 void loop()
 {
-  int sensorValue = analogRead(sensorPin);
+  int sensorValue = analogRead(pot);
 
   int numPins = map(sensorValue, 0, 1023, 0, 6);
  
