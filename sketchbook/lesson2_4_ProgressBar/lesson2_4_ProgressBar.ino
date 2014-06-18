@@ -7,7 +7,7 @@
 
 // Using analog pins as digital output
 // http://forum.arduino.cc/index.php/topic,48864.0.html
-int led[] = {14, 15, 16, 17, 18, 19};
+int led[] = {11, 10, 9, 6, 5, 3};
 int idx = 0;
 int dir = 1;
 
